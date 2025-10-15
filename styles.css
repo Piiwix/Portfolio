@@ -81,7 +81,6 @@ ul {
 .example-2 .icon-content a[data-social="github"] ~ .tooltip {
     background-color: #24262a;
 }
-    /* === Fond animé === */
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -92,7 +91,6 @@ ul {
       overflow-x: hidden;
     }
 
-    /* Canvas du fond animé */
     .background {
       position: fixed;
       top: 0; left: 0;
@@ -115,7 +113,6 @@ ul {
         margin-top: 150px;
     }
 
-    /* Séparateur doré */
 .separator {
   width: 60%;
   height: 2px;
@@ -123,7 +120,6 @@ ul {
   background: linear-gradient(to right, transparent, #ffd700, transparent);
 }
 
-/* Bloc réseaux */
 .networks {
   margin-top: 30px;
   padding: 30px;
@@ -160,7 +156,6 @@ ul {
       to { transform: translateY(-10vh) scale(1); opacity: 0; }
     }
 
-    /* === Onglets / contenu / footer comme avant === */
     .tab-container {
       display: flex;
       width: 100%;
@@ -234,77 +229,6 @@ ul {
       margin: 20px 0 40px;
       color: #ffd700;
     }
-/* === Amélioration demandée === */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 40px;
-  align-items: stretch;
-}
-
-.project-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 95%;
-  padding: 20px;
-  background: rgba(20,20,20,0.8);
-  border-radius: 12px;
-  border: 2px solid transparent;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-  transition: all 0.3s ease;
-}
-.project-block:hover {
-  border-color: #ffd700;
-  transform: translateY(-5px);
-}
-
-.carousel {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.carousel-images {
-  display: flex;
-  align-items: center;
-  transition: transform 0.6s ease-in-out;
-}
-
-.carousel-images img {
-  width: 100%;
-  height: 300px;
-  object-fit: contain;
-  border-radius: 10px;
-  background-color: #111;
-}
-
-.carousel button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
-  border: none;
-  color: #ffd700;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.carousel .prev { left: 10px; }
-.carousel .next { right: 10px; }
-
-.project-text {
-  max-width: 800px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-.project-text h2 { color: #ffd700; margin-bottom: 15px; }
-.project-text p { font-size: 18px; color: #ccc; line-height: 1.6; }
 
     footer {
       text-align: center;
@@ -317,15 +241,14 @@ ul {
     }
 
 
-    /* === CAROUSEL === */
 .carousel {
   position: relative;
   width: 100%;
-  height: 400px; /* Augmente la hauteur pour des images bien visibles */
+  height: 400px;
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 15px;
-  background-color: #111; /* fond neutre pour uniformité */
+  background-color: #111;
 }
 
 .carousel-images {
@@ -338,13 +261,12 @@ ul {
 .carousel-images img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* l’image entière est visible, sans déformation */
-  flex-shrink: 0;      /* chaque image garde sa taille */
+  object-fit: contain; 
+  flex-shrink: 0;    
   background-color: #111;
   border-radius: 10px;
 }
 
-/* Boutons */
 .carousel button {
   position: absolute;
   top: 50%;
@@ -367,7 +289,6 @@ ul {
 .carousel .prev { left: 10px; }
 .carousel .next { right: 10px; }
 
-/* === BLOC PROJET (même taille) === */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -399,3 +320,5 @@ ul {
   text-justify: inter-word;
   margin-top: 10px;
 }
+.project-text h2 { color: #ffd700; margin-bottom: 15px; }
+.project-text p { font-size: 18px; color: #ccc; line-height: 1.6; }
