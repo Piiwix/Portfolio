@@ -50,7 +50,7 @@
             <ul class="example-2">
                     <li class="icon-content">
                     <a
-                        href="https://linkedin.com/"
+                        href="https://www.linkedin.com/in/pascal-blondel/"
                         aria-label="LinkedIn"
                         data-social="linkedin"
                     >
@@ -91,6 +91,7 @@
                         </svg>
                     </a>
                     <div class="tooltip">GitHub</div>
+                    </li>
                 </ul>
         </div>
     </div>
@@ -121,8 +122,6 @@
           <div class="carousel-images">
             <img src="images/bomberman.png">
           </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
         </div>
         <div class="project-text">
           <h2>Projet 2 - BomberMan</h2>
@@ -136,32 +135,6 @@
     &copy; 2025 Pascal BLONDEL — Portfolio
   </footer>
 
-  <script>
-    // Tabs
-    const tabs = document.querySelectorAll('.tab');
-    const contents = document.querySelectorAll('.content');
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        contents.forEach(c => c.classList.remove('active'));
-        tab.classList.add('active');
-        document.getElementById(tab.getAttribute('data-target')).classList.add('active');
-      });
-    });
-
-    // Carrousel
-    document.querySelectorAll('.carousel').forEach(carousel => {
-      const imagesContainer = carousel.querySelector('.carousel-images');
-      const images = carousel.querySelectorAll('img');
-      let index = 0;
-      function showImage(i) {
-        index = (i + images.length) % images.length;
-        imagesContainer.style.transform = `translateX(${-index * 100}%)`;
-      }
-      carousel.querySelector('.prev').addEventListener('click', () => showImage(index - 1));
-      carousel.querySelector('.next').addEventListener('click', () => showImage(index + 1));
-      showImage(0);
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
