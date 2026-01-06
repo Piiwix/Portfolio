@@ -231,15 +231,46 @@ h1.section-title {
   color: #ffd700;
 }
 
-footer {
-  text-align: center;
-  padding: 25px;
-  font-size: 14px;
-  color: #777;
-  border-top: 1px solid #222;
-  margin-top: 50px;
-  background: rgba(10,10,10,0.8);
+.footer {
+    background: rgba(10,10,10,0.9);
+    border-top: 1px solid #222;
+    padding: 20px;
+    text-align: center;
 }
+
+.cv-button {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ffd700;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.cv-button:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+.footer-email a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-email a:hover {
+    color: #ffd700;
+}
+
+.footer-copy {
+    font-size: 13px;
+    color: #777;
+}
+
 
 .carousel {
   position: relative;
@@ -307,7 +338,7 @@ footer {
   border: 2px solid transparent;
   box-shadow: 0 8px 20px rgba(0,0,0,0.6);
   transition: all 0.3s ease;
-  height: 100%;
+
 }
 
 .project-block:hover {
