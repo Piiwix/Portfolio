@@ -251,15 +251,26 @@ h1.section-title {
     margin-bottom: 8px;
 }
 
+.cv-button:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
 .cv-button:hover {
     background: #ffd700;
     color: #000;
 }
 
+
 .footer-email a {
     color: #ccc;
     text-decoration: none;
     font-size: 15px;
+}
+
+.footer-email a:visited {
+    color: #ccc;
+    text-decoration: none;
 }
 
 .footer-email a:hover {
